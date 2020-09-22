@@ -1,3 +1,7 @@
+h2[id=about-me] {
+    color: green
+}
+
 h2:hover {
     color: red;
 }
@@ -10,10 +14,48 @@ li:only-child {
     color: blueviolet;
 }
 
-#google-link:link {
+
+/* #google-link:link {
     color: purple
 }
 
 #google-link:visited {
     color: red
+} */
+
+
+/* any achor tag after h2*/
+
+h2+a {
+    color: purple
+}
+
+
+/* same parent */
+
+textarea~button {
+    color: green
+}
+
+
+/* every li inside ul  child */
+
+ul>li {
+    color: green
+}
+
+
+/* li in inside ul descendants */
+
+ul li {
+    color: salmon;
+}
+
+
+/* ^ means "start with" so the following means: src with link start with ./imgs/*/
+
+img[src^='./imgs/'] {
+    border: 2px solid black;
+    width: 70%;
+    height: 60vh;
 }
