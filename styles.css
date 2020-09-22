@@ -1,4 +1,4 @@
-h2[id=about-me] {
+/* h2[id=about-me] {
     color: green
 }
 
@@ -12,7 +12,7 @@ li:nth-child(2) {
 
 li:only-child {
     color: blueviolet;
-}
+} */
 
 
 /* #google-link:link {
@@ -26,30 +26,34 @@ li:only-child {
 
 /* any achor tag after h2*/
 
-h2+a {
+
+/* h2+a {
     color: purple
-}
+} */
 
 
 /* same parent */
 
-textarea~button {
+
+/* textarea~button {
     color: green
-}
+} */
 
 
 /* every li inside ul  child */
 
-ul>li {
+
+/* ul>li {
     color: green
-}
+} */
 
 
 /* li in inside ul descendants */
 
-ul li {
+
+/* ul li {
     color: salmon;
-}
+} */
 
 
 /* ^ means "start with" so the following means: src with link start with ./imgs/*/
@@ -58,4 +62,40 @@ img[src^='./imgs/'] {
     border: 2px solid black;
     width: 70%;
     height: 60vh;
+}
+
+
+/* rgba color, a has range from (0, 1) */
+
+body {
+    background: rgba(189, 229, 258, 0.4);
+    /* background: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=60'); */
+    text-transform: capitalize;
+    text-align: justify;
+}
+
+#title {
+    color: rgb(97, 130, 197);
+}
+
+.subtitle {
+    color: rgb(200, 148, 30);
+}
+
+#service-image {
+    /*for the div*/
+    height: 50vh;
+    /*for the div*/
+    width: 70%;
+    /* background: linear-gradient(150deg, rgb(94, 255, 126), rgba(255, 100, 200, 0.5)); */
+    /* background: radial-gradient(circle, pink, steelblue); */
+    background: url("./imgs/sprinkles.png");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    /* background-size: contain; */
+    background-color: blue;
+}
+
+.link {
+    text-decoration: underline;
 }
