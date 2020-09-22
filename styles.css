@@ -1,0 +1,19 @@
+h2:hover {
+    color: red;
+}
+
+li:nth-child(2) {
+    color: blue;
+}
+
+li:only-child {
+    color: blueviolet;
+}
+
+#google-link:link {
+    color: purple
+}
+
+#google-link:visited {
+    color: red
+}
